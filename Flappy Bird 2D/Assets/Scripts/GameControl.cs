@@ -12,6 +12,7 @@ public class GameControl : MonoBehaviour
 {
 	public static GameControl instance; //for a singleton pattern
 	public GameObject gameOverText;
+	public float scrollSpeed = -1.5f;
 	public bool gameOver = false;
 	void Awake ()
 	{
