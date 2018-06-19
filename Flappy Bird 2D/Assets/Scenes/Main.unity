@@ -232,11 +232,23 @@ MonoBehaviour:
   sounds:
   - name: hitGround
     clip: {fileID: 8300000, guid: eaaf0eaa73f049441afde765f0034700, type: 3}
-    volume: 0.9
+    loop: 0
+    volume: 1
     source: {fileID: 0}
   - name: hitColumn
     clip: {fileID: 8300000, guid: 5a6b3519cfe4b7a429e2c7e5aeaa5c04, type: 3}
+    loop: 0
+    volume: 1
+    source: {fileID: 0}
+  - name: youSuck
+    clip: {fileID: 0}
+    loop: 0
     volume: 0.9
+    source: {fileID: 0}
+  - name: theme
+    clip: {fileID: 8300000, guid: d4186eba24587c747bb44e9878a22dab, type: 3}
+    loop: 1
+    volume: 0.6
     source: {fileID: 0}
 --- !u!4 &389059789
 Transform:
@@ -1390,4 +1402,4 @@ MonoBehaviour:
     type: 2}
   spawnRate: 3
   columnMin: -2
-  columnMax: 2
+  columnMax: 3.5
