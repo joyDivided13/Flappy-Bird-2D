@@ -13,6 +13,7 @@ public class GameControl : MonoBehaviour
 {
 	public static GameControl instance; //for a singleton pattern
 	public GameObject gameOverText;
+	public GameObject topScoreText;
 	public float scrollSpeed = -1.5f;
 	public bool gameOver = false;
 	private int _score;
@@ -28,6 +29,12 @@ public class GameControl : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+	}
+
+	void Start()
+	{
+		Text dummyText = topScoreText.GetComponent<Text>();
+		dummyText.text = PlayerPrefs.GetInt("TopScore", 0).ToString();
 	}
 
 	void Update()
@@ -53,5 +60,18 @@ public class GameControl : MonoBehaviour
 	{
 		gameOverText.SetActive(true);
 		gameOver = true;
+		if(_score > PlayerPrefs.GetInt("TopScore", 0))
+		{
+			PlayerPrefs.SetInt("TopScore", _score);
+			Text dummyText = topScoreText.GetComponent<Text>();
+			dummyText.text = "Top Score: " + _score.ToString();
+			topScoreText.SetActive(true);
+		}
+		else
+		{
+			Text dummyText = topScoreText.GetComponent<Text>();
+			dummyText.text = "Top Score: " + PlayerPrefs.GetInt("TopScore").ToString();
+			topScoreText.SetActive(true);
+		}
 	}
 }
