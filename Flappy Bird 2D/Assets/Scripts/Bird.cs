@@ -34,9 +34,22 @@ public class Bird : MonoBehaviour
 		}
 	}
 
-	void OnCollisionEnter2D() //spelling matters
+	void OnCollisionEnter2D(Collision2D col) //spelling matters
 	{
 		_rb2d.velocity = Vector2.zero;
+		
+		bool hasHitGround = false;
+
+		if(col.collider.tag == "Ground" && !hasHitGround)
+		{
+			AudioManager.instance.Play("hitGround");
+			hasHitGround = true;
+		}
+		else if(col.collider.tag == "Columns" && !hasHitGround)
+		{
+			AudioManager.instance.Play("hitColumn");
+		}
+
 		_isDead = true;
 		_anim.SetTrigger("Die");
 		GameControl.instance.BirdDied();

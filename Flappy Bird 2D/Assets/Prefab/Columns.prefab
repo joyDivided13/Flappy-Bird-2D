@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61299954061267018}
   m_Layer: 0
   m_Name: ColumnSprite (1)
-  m_TagString: Untagged
+  m_TagString: Columns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114237533323592134}
   m_Layer: 0
   m_Name: Columns
-  m_TagString: Untagged
+  m_TagString: Columns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 61480550379156708}
   m_Layer: 0
   m_Name: ColumnSprite
-  m_TagString: Untagged
+  m_TagString: Columns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10.24}
+  m_Size: {x: 0.9699402, y: 10.24}
   m_EdgeRadius: 0
 --- !u!61 &61480550379156708
 BoxCollider2D:
@@ -162,7 +162,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0028307438, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -173,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10.24}
+  m_Size: {x: 0.960731, y: 10.24}
   m_EdgeRadius: 0
 --- !u!61 &61684828601986696
 BoxCollider2D:
