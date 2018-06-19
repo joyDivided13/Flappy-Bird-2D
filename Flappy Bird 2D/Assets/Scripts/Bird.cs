@@ -14,6 +14,7 @@ public class Bird : MonoBehaviour
 	private Animator _anim;
 	
 	public float upForce = 200f;
+	public CameraShake cameraShake; //object of the public class CameraShake
 	
 	void Start ()
 	{
@@ -37,7 +38,7 @@ public class Bird : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D col) //spelling matters
 	{
 		_rb2d.velocity = Vector2.zero;
-		
+		StartCoroutine(cameraShake.Shake(.15f, .14f)); //calling the coroutine
 		bool hasHitGround = false;
 
 		if(col.collider.tag == "Ground" && !hasHitGround)

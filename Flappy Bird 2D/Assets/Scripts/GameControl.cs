@@ -53,13 +53,12 @@ public class GameControl : MonoBehaviour
 		}
 
 		_score++;
+		
 		scoreText.text = "Score: " + _score.ToString();
 	}
 
-	public void BirdDied()
+	public void topScore()
 	{
-		gameOverText.SetActive(true);
-		gameOver = true;
 		if(_score > PlayerPrefs.GetInt("TopScore", 0))
 		{
 			PlayerPrefs.SetInt("TopScore", _score);
@@ -73,5 +72,13 @@ public class GameControl : MonoBehaviour
 			dummyText.text = "Top Score: " + PlayerPrefs.GetInt("TopScore").ToString();
 			topScoreText.SetActive(true);
 		}
+	}
+
+	public void BirdDied()
+	{
+		gameOverText.SetActive(true);
+		gameOver = true;
+		
+		topScore();
 	}
 }
