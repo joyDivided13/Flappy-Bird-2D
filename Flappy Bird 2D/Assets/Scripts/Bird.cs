@@ -38,6 +38,11 @@ public class Bird : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D col) //spelling matters
 	{
 		_rb2d.velocity = Vector2.zero;
+		_isDead = true;
+		_anim.SetTrigger("Die");
+
+		GameControl.instance.BirdDied();
+
 		StartCoroutine(cameraShake.Shake(.15f, .14f)); //calling the coroutine
 
 		if(col.collider.tag == "Ground")
@@ -49,9 +54,6 @@ public class Bird : MonoBehaviour
 			AudioManager.instance.Play("hitColumn");
 		}
 
-		_isDead = true;
-		_anim.SetTrigger("Die");
-		GameControl.instance.BirdDied();
 		//TODO: AudioManager.instance.Play("youSuck");
 	}
 }
