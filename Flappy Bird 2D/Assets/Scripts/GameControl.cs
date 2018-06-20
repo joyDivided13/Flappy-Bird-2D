@@ -14,7 +14,7 @@ public class GameControl : MonoBehaviour
 	public static GameControl instance; //for a singleton pattern
 	public GameObject gameOverText;
 	public GameObject topScoreText;
-	public float scrollSpeed = -1.5f;
+	public float scrollSpeed = 1.5f;
 	public bool gameOver = false;
 	private int _score;
 	public Text scoreText;

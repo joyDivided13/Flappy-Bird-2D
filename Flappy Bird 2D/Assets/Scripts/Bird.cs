@@ -39,14 +39,12 @@ public class Bird : MonoBehaviour
 	{
 		_rb2d.velocity = Vector2.zero;
 		StartCoroutine(cameraShake.Shake(.15f, .14f)); //calling the coroutine
-		bool hasHitGround = false;
 
-		if(col.collider.tag == "Ground" && !hasHitGround)
+		if(col.collider.tag == "Ground")
 		{
 			AudioManager.instance.Play("hitGround");
-			hasHitGround = true;
 		}
-		else if(col.collider.tag == "Columns" && !hasHitGround)
+		else if(col.collider.tag == "Columns")
 		{
 			AudioManager.instance.Play("hitColumn");
 		}
@@ -54,6 +52,6 @@ public class Bird : MonoBehaviour
 		_isDead = true;
 		_anim.SetTrigger("Die");
 		GameControl.instance.BirdDied();
-		//AudioManager.instance.Play("youSuck");
+		//TODO: AudioManager.instance.Play("youSuck");
 	}
 }

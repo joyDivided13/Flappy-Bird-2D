@@ -1242,7 +1242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 39}
+  m_AnchoredPosition: {x: 0, y: 33.38}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1639032684
@@ -1504,6 +1504,6 @@ MonoBehaviour:
   columnPoolSize: 5
   columnPrefab: {fileID: 1247633365914858, guid: f30e27259e365cb4baec1200ece91e51,
     type: 2}
-  spawnRate: 3
-  columnMin: -2
-  columnMax: 3.5
+  spawnRate: 3.3
+  columnMin: -2.5
+  columnMax: 2

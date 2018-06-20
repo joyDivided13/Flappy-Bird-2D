@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 {
 	public Sound[] sounds;		//the array that holds all the different sounds
 	public static AudioManager instance;
+
 	void Awake()
 	{
 		DontDestroyOnLoad(gameObject); //the theme does not get cut when reloading the scene
@@ -26,7 +27,7 @@ public class AudioManager : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-
+	
 	void Start ()
 	{
 		foreach(Sound s in sounds)
