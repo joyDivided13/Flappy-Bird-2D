@@ -7,9 +7,9 @@
 
 A simple and fun hyper-casual game.
 
-<a href="https://raw.githubusercontent.com/shubham-saudolla/media/master/lilac-theme/lilacScreenshot.png" target="_blank"><img src="https://raw.githubusercontent.com/shubham-saudolla/media/master/lilac-theme/lilacScreenshot.png" width = "769"/></a>
+<a href="https://raw.githubusercontent.com/shubham-saudolla/media/master/Flappy-Bird-2D/FlappyBird2Dgameplay.gif" target="_blank"><img src="https://raw.githubusercontent.com/shubham-saudolla/media/master/Flappy-Bird-2D/FlappyBird2Dgameplay.gif" width = "769"/></a>
 
-[![Download](https://img.shields.io/static/v1.svg?label=Download&message=Unity&style=for-the-badge&labelColor=000000)](https://marketplace.visualstudio.com/items?itemName=shubham-saudolla.lilac)
+[![Download](https://img.shields.io/static/v1.svg?label=Download&message=Unity&style=for-the-badge&labelColor=000000)](https://unity3d.com)
 </div>
 
 ---
@@ -19,8 +19,6 @@ This is a clone of the popular hyper-casual game which employs the concept of ob
 ---
 
 ## Useful Information
-
-[Follow me on twitter, and say hi!](https://twitter.com/joyDivided13)
 
 If you'd like to report a bug with the game, please raise an issue with the repository.
 
